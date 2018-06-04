@@ -22,8 +22,8 @@ public class CityController {
         return cityRepository.findAll();
     }
 
-    @RequestMapping(value = "/cities/id/{id}", method = RequestMethod.GET)
-    public WeatherConditions getWeatherbyCityId(@PathVariable("id") long id,
+    @RequestMapping(value = "/cities/id", method = RequestMethod.GET)
+    public WeatherConditions getWeatherbyCityId(@RequestParam(value = "id") long id,
                                                 @RequestParam(value = "units", required = false) String units) {
         RestTemplate restTemplate = new RestTemplate();
 
@@ -36,8 +36,8 @@ public class CityController {
         return restTemplate.getForObject(url, WeatherConditions.class);
     }
 
-    @RequestMapping(value = "/cities/name/{cityName}", method = RequestMethod.GET)
-    public WeatherConditions getWeatherbyCityNameAndCountryCode(@PathVariable("cityName") String cityName,
+    @RequestMapping(value = "/cities/name", method = RequestMethod.GET)
+    public WeatherConditions getWeatherbyCityNameAndCountryCode(@RequestParam(value = "cityName") String cityName,
                                                                 @RequestParam(value = "countryCode", required = false) String countryCode,
                                                                 @RequestParam(value = "units", required = false) String units) {
         RestTemplate restTemplate = new RestTemplate();
