@@ -70,14 +70,7 @@ public class Application implements CommandLineRunner {
             }
         }
 
-        /*
-        getLog().info("Querying all cities");
-        getJdbcTemplate().query(
-                "SELECT * FROM CITY",
-                (rs, rowNum) -> new City(rs.getInt("ID"), rs.getString("NAME"), rs.getDouble("LATITUDE"), rs.getDouble("LONGITUDE"), rs.getString("COUNTRY_CODE"))
-        ).forEach(city -> getLog().info(city.toString()));
-        */
-        getLog().info(String.format("Inserted %s cities", i));
+        getLog().info(String.format("Inserted %s cities", i - 1));
         getLog().info("Done with creating tables");
     }
 }

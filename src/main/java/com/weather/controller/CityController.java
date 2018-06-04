@@ -17,9 +17,19 @@ public class CityController {
     @Autowired
     private CityRepository cityRepository;
 
+    @RequestMapping(value = "/cities/count", method = RequestMethod.GET)
+    public Integer getCityCount() {
+        return cityRepository.findAll().size();
+    }
+
     @RequestMapping(value = "/cities", method = RequestMethod.GET)
-    public List<City> getUsers() {
+    public List<City> getCities() {
         return cityRepository.findAll();
+    }
+
+    @RequestMapping(value = "/cities/top10", method = RequestMethod.GET)
+    public List<City> getCitiesTop10() {
+        return cityRepository.findAll().subList(0, 10);
     }
 
     @RequestMapping(value = "/cities/id", method = RequestMethod.GET)
