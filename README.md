@@ -2,9 +2,9 @@
 
 This project is a coding challenge for Everis Chile.
 I plan to polish my skills in Angular given the complexity.
-To keep it simple, I packed backend and frontend in this project. I usually would have two repositories for this.
+To keep it simple, I packed both, backend and frontend in this project. I normally would have two separated repositories for this.
 
-It took me around 20 hours to do this challenge. Considering that I have never made a project in Spring andd Angular from scratch. I had to do a good bit of research to do this accordingly.
+It took me around 20 hours to do this challenge. Considering that I have never made a project in Spring and Angular from scratch. I had to do a good bit of research to do this accordingly.
 
 Tools
 IntelliJ IDEA 2018.1.4 (Community Edition) -> Backend
