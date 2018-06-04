@@ -16,14 +16,16 @@ export class CitylistComponent implements OnInit {
 
   constructor(private _cityService:CityService) { }
 
+  // called to setup the page and the cities to select
   ngOnInit() {
-    this._cityService.getCitiesTop10().subscribe((cities) => {
+    this._cityService.getCitiesTop100().subscribe((cities) => {
       this.cities = cities;
     }, (error) => {
       console.log(error);
     })
   }
 
+  // submit to request data to the backend
   getWeather(city, unit) {
     this._cityService.getWeatherbyCityId(city, unit).subscribe((weatherConditions) => {
       this.weatherConditions = weatherConditions;

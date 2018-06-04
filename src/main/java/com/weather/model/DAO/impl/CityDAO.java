@@ -65,4 +65,31 @@ public class CityDAO implements ICityDAO {
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    public List<City> getCitiesTop1000() {
+        String sql = "SELECT * FROM CITY LIMIT 1000";
+
+        try (Connection conn = dataSource.getConnection()) {
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            List<City> cityList = new ArrayList<>();
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                City newCity = new City(
+                        resultSet.getInt(1),
+                        resultSet.getString(2),
+                        resultSet.getDouble(3),
+                        resultSet.getDouble(4),
+                        resultSet.getString(5));
+                cityList.add(newCity);
+            }
+
+            resultSet.close();
+            preparedStatement.close();
+            return cityList;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

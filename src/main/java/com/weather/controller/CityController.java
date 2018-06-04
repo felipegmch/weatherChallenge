@@ -27,9 +27,9 @@ public class CityController {
         return cityRepository.findAll();
     }
 
-    @RequestMapping(value = "/cities/top10", method = RequestMethod.GET)
-    public List<City> getCitiesTop10() {
-        return cityRepository.findAll().subList(0, 10);
+    @RequestMapping(value = "/cities/top100", method = RequestMethod.GET)
+    public List<City> getCitiesTop100() {
+        return cityRepository.findAll().subList(0, 100);
     }
 
     @RequestMapping(value = "/cities/id", method = RequestMethod.GET)

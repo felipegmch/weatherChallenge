@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c684cdb-da7e-49cd-aa58-25af4efd39f5" name="Default" comment="does not shows errors when executing">
+    <list default="true" id="8c684cdb-da7e-49cd-aa58-25af4efd39f5" name="Default" comment="works as intended, missing validation and more polished frontend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/weatherChallenge/src/app/components/citylist/citylist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/weatherChallenge/src/app/components/citylist/citylist.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/entities/ICityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/entities/ICityDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/impl/CityDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/impl/CityDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/weatherChallenge/src/app/components/citylist/citylist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/weatherChallenge/src/app/components/citylist/citylist.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/weatherChallenge/src/app/question-base.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/weatherChallenge/src/app/question-dropdown.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/weatherChallenge/src/app/shared_service/city.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/weatherChallenge/src/app/shared_service/city.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,6 +40,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CityDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DAO/impl/CityDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Unit.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,19 +70,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CityController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CityController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="178">
+              <caret line="38" column="90" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#664#665#0" expanded="true" />
                 <element signature="e#711#712#0" expanded="true" />
                 <element signature="e#822#823#0" expanded="true" />
                 <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,8 +91,8 @@
       <file leaf-file-name="CityRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/service/CityRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="69" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="69" />
+            <state relative-caret-position="51">
+              <caret line="3" column="61" lean-forward="true" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="637">
               <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -149,8 +165,6 @@
         <option value="$PROJECT_DIR$/src/main/java/common/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/Repositories/CityRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/impl/ICityDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/entities/ICityDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/impl/CityDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Value.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Quote.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Clouds.java" />
@@ -171,13 +185,15 @@
         <option value="$PROJECT_DIR$/src/test/java/weatherChallenge/unit/WeatherAPIControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/com/weatherChallenge/unit/WeatherAPIControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/City.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/controller/UnitsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/service/UnitsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/controller/UnitController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Unit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/service/UnitRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/entities/ICityDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DAO/impl/CityDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java" />
       </list>
     </option>
   </component>
@@ -306,15 +322,6 @@
               <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -363,7 +370,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SpringJDBCExample" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -612,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528109540368</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="works as intended, missing validation and more polished frontend">
+      <created>1528111203234</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1528111203234</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -699,7 +713,8 @@
     <MESSAGE value="added mocktests, angular project (excluded) and minor change to API" />
     <MESSAGE value="added interoperability with frontend, it shows a fraction of all cities due the load on the page. It has to be on demand" />
     <MESSAGE value="the requests goes back to the service but still have to go to Back" />
-    <option name="LAST_COMMIT_MESSAGE" value="the requests goes back to the service but still have to go to Back" />
+    <MESSAGE value="works as intended, missing validation and more polished frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="works as intended, missing validation and more polished frontend" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -739,8 +754,8 @@
             <element signature="e#711#712#0" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -805,8 +820,8 @@
             <element signature="e#711#712#0" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -906,26 +921,6 @@
             <element signature="e#418#419#0" expanded="true" />
             <element signature="e#460#461#0" expanded="true" />
             <element signature="e#494#495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DAO/entities/ICityDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DAO/impl/CityDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1149,38 +1144,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/service/CityRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="69" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DTO/City.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Unit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1205,30 +1174,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DAO/entities/ICityDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/service/CityRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="61" lean-forward="true" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/model/DAO/impl/CityDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="38" column="90" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#664#665#0" expanded="true" />
             <element signature="e#711#712#0" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>

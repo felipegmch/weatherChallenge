@@ -8,4 +8,6 @@ public interface ICityDAO {
     public void insert(City city);
 
     public List<City> findAll();
+
+    public List<City> getCitiesTop1000();
 }

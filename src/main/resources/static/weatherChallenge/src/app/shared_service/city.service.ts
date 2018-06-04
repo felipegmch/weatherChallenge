@@ -33,9 +33,9 @@ export class CityService {
     );
   }
 
-  // API: GET /cities/top10
-  public getCitiesTop10() {
-    return this._http.get(this.baseUrl + '/cities/top10').pipe(
+  // API: GET /cities/top100
+  public getCitiesTop100() {
+    return this._http.get(this.baseUrl + '/cities/top100').pipe(
       map(response => {
         const city = response.json();
         return city.map((city) => new City(city));
