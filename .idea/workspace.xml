@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c684cdb-da7e-49cd-aa58-25af4efd39f5" name="Default" comment="structure, data and jdbc with h2 used as temporal database. Controller working in /api/cities">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Clouds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Rain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Snow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/System.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/WeatherConditions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Wind.java" afterDir="false" />
+    <list default="true" id="8c684cdb-da7e-49cd-aa58-25af4efd39f5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,6 +14,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/weatherChallenge$EntryPoint.ic" NAME="EntryPoint Coverage Results" MODIFIED="1528065457506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="weatherChallenge" />
   </component>
@@ -33,10 +25,12 @@
       <file leaf-file-name="CityController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="393">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,6 +52,7 @@
       <find>cityRepository</find>
       <find>jdbcTemplate</find>
       <find>jackson</find>
+      <find>countryCodeUrl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,6 +87,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Weather.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/Wind.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/model/DTO/Weather/WeatherConditions.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java" />
       </list>
     </option>
@@ -146,86 +142,7 @@
               <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weatherChallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weatherChallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
-              <item name="Weather" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528052057441</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added structure for api calls to OpenWeatherMap and sample call">
+      <created>1528061612168</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528061612168</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -362,7 +286,8 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987553" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22821577" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42634854" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3296582" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32987553" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.14829107" />
@@ -371,7 +296,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" sideWeight="0.50080776" side_tool="true" weight="0.14663726" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39834026" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39834026" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -387,14 +312,15 @@
     <MESSAGE value="initial commit, built with maven" />
     <MESSAGE value="structure, data and jdbc with h2 used for the cities" />
     <MESSAGE value="structure, data and jdbc with h2 used as temporal database. Controller working in /api/cities" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure, data and jdbc with h2 used as temporal database. Controller working in /api/cities" />
+    <MESSAGE value="added structure for api calls to OpenWeatherMap and sample call" />
+    <option name="LAST_COMMIT_MESSAGE" value="added structure for api calls to OpenWeatherMap and sample call" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -448,6 +374,8 @@
           <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -508,6 +436,8 @@
           <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -900,12 +830,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weather/controller/CityController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="393">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
           </folding>
         </state>
       </provider>

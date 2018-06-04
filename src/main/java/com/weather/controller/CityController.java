@@ -22,12 +22,32 @@ public class CityController {
         return cityRepository.findAll();
     }
 
-    @RequestMapping(value = "/cities/{id}", method = RequestMethod.GET)
-    public WeatherConditions getCityAPIWeather(@PathVariable("id") long id) {
+    @RequestMapping(value = "/cities/id/{id}", method = RequestMethod.GET)
+    public WeatherConditions getWeatherbyCityId(@PathVariable("id") long id,
+                                                @RequestParam(value = "units", required = false) String units) {
         RestTemplate restTemplate = new RestTemplate();
 
         String apiKey = "98ff04334ed14fb358049a447c75b236";
-        String url = String.format("http://api.openweathermap.org/data/2.5/weather?id=%s&appid=%s", id, apiKey);
+        String weatherUrl = "http://api.openweathermap.org/data/2.5/weather";
+        String unitsUrl = units != null ? String.format("&units=%s", units) : "";
+
+        String url = String.format("%s?id=%s%s&appid=%s", weatherUrl, id, unitsUrl, apiKey);
+
+        return restTemplate.getForObject(url, WeatherConditions.class);
+    }
+
+    @RequestMapping(value = "/cities/name/{cityName}", method = RequestMethod.GET)
+    public WeatherConditions getWeatherbyCityNameAndCountryCode(@PathVariable("cityName") String cityName,
+                                                                @RequestParam(value = "countryCode", required = false) String countryCode,
+                                                                @RequestParam(value = "units", required = false) String units) {
+        RestTemplate restTemplate = new RestTemplate();
+
+        String apiKey = "98ff04334ed14fb358049a447c75b236";
+        String weatherUrl = "http://api.openweathermap.org/data/2.5/weather";
+        String countryCodeUrl = countryCode != null ? String.format(",%s", countryCode) : "";
+        String unitsUrl = units != null ? String.format("&units=%s", units) : "";
+
+        String url = String.format("%s?q=%s%s%s&appid=%s", weatherUrl, cityName, countryCodeUrl, unitsUrl, apiKey);
 
         return restTemplate.getForObject(url, WeatherConditions.class);
     }
