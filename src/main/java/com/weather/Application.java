@@ -41,7 +41,6 @@ public class Application implements CommandLineRunner {
 
         getLog().info("Creating tables");
 
-        // ID, NAME, LONGITUDE, LATITUDE, COUNTRYCODE
         getJdbcTemplate().execute("DROP TABLE CITY IF EXISTS");
         getJdbcTemplate().execute("CREATE TABLE CITY(" +
                 "ID INT, NAME VARCHAR(255), LATITUDE DECIMAL(8,6), LONGITUDE DECIMAL(9,6), COUNTRY_CODE VARCHAR(255))");

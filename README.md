@@ -19,8 +19,8 @@ It took me around 20 hours to do this challenge. Considering that I have never m
 - I decided to use H2 to simulate the city list database. A DAO/DAL layer would be useful if it were used a real database. As for now using H2 was to simplify my own development process given the core of the challenge was the integration with OpenWeatherMap and the frontend with Angular.
 - I decided to show the first 100 cities in the city list provided. It is inpractical to load 74071 elements in a form-control. An asyncronous method to search lazily for the city should be added.
 
-### To start the backend, open the project in IntelliJ IDEA and add a new configuration (Application):
-- Main class: com.weather.Application
+### To start the backend, open the project in IntelliJ IDEA and add a new configuration (com.weather.Application):
+- Main class: com.weather.com.weather.Application
 - Use classpath or module: WeatherChallenge
 - JRE: 1.8.0_171
 - Backend runs by default in http://localhost:8080/
