@@ -5,33 +5,33 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Main {
 
-    private Double temperature;
+    private Double temp;
     private Double pressure;
     private Double humidity;
-    private Double minTemperature;
-    private Double maxTemperature;
-    private Double pressureSeaLevel;
-    private Double pressureGroundLevel;
+    private Double temp_min;
+    private Double temp_max;
+    private Double sea_level;
+    private Double grnd_level;
 
     public Main() {
     }
 
-    public Main(Double temperature, Double pressure, Double humidity, Double minTemperature, Double maxTemperature, Double pressureSeaLevel, Double pressureGroundLevel) {
-        this.temperature = temperature;
+    public Main(Double temp, Double pressure, Double humidity, Double temp_min, Double temp_max, Double sea_level, Double grnd_level) {
+        this.temp = temp;
         this.pressure = pressure;
         this.humidity = humidity;
-        this.minTemperature = minTemperature;
-        this.maxTemperature = maxTemperature;
-        this.pressureSeaLevel = pressureSeaLevel;
-        this.pressureGroundLevel = pressureGroundLevel;
+        this.temp_min = temp_min;
+        this.temp_max = temp_max;
+        this.sea_level = sea_level;
+        this.grnd_level = grnd_level;
     }
 
-    public Double getTemperature() {
-        return temperature;
+    public Double getTemp() {
+        return temp;
     }
 
-    public void setTemperature(Double temperature) {
-        this.temperature = temperature;
+    public void setTemp(Double temp) {
+        this.temp = temp;
     }
 
     public Double getPressure() {
@@ -50,48 +50,48 @@ public class Main {
         this.humidity = humidity;
     }
 
-    public Double getMinTemperature() {
-        return minTemperature;
+    public Double getTemp_min() {
+        return temp_min;
     }
 
-    public void setMinTemperature(Double minTemperature) {
-        this.minTemperature = minTemperature;
+    public void setTemp_min(Double temp_min) {
+        this.temp_min = temp_min;
     }
 
-    public Double getMaxTemperature() {
-        return maxTemperature;
+    public Double getTemp_max() {
+        return temp_max;
     }
 
-    public void setMaxTemperature(Double maxTemperature) {
-        this.maxTemperature = maxTemperature;
+    public void setTemp_max(Double temp_max) {
+        this.temp_max = temp_max;
     }
 
-    public Double getPressureSeaLevel() {
-        return pressureSeaLevel;
+    public Double getSea_level() {
+        return sea_level;
     }
 
-    public void setPressureSeaLevel(Double pressureSeaLevel) {
-        this.pressureSeaLevel = pressureSeaLevel;
+    public void setSea_level(Double sea_level) {
+        this.sea_level = sea_level;
     }
 
-    public Double getPressureGroundLevel() {
-        return pressureGroundLevel;
+    public Double getGrnd_level() {
+        return grnd_level;
     }
 
-    public void setPressureGroundLevel(Double pressureGroundLevel) {
-        this.pressureGroundLevel = pressureGroundLevel;
+    public void setGrnd_level(Double grnd_level) {
+        this.grnd_level = grnd_level;
     }
 
     @Override
     public String toString() {
         return "Main{" +
-                "temperature=" + temperature +
+                "temp=" + temp +
                 ", pressure=" + pressure +
                 ", humidity=" + humidity +
-                ", minTemperature=" + minTemperature +
-                ", maxTemperature=" + maxTemperature +
-                ", pressureSeaLevel=" + pressureSeaLevel +
-                ", pressureGroundLevel=" + pressureGroundLevel +
+                ", temp_min=" + temp_min +
+                ", temp_max=" + temp_max +
+                ", sea_level=" + sea_level +
+                ", grnd_level=" + grnd_level +
                 '}';
     }
 }

@@ -2,18 +2,21 @@ package com.weather.model.DTO.Weather;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.Arrays;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WeatherConditions {
 
-    private Coordinates coordinates;
+    private Coordinates coord;
     private Weather[] weather;
     private String base;
     private Main main;
     private Wind wind;
     private Clouds clouds;
     private Rain rain;
-    private Long timeOfDataCalculation;
-    private System system;
+    private Snow snow;
+    private Long dt;
+    private System sys;
     private Integer id;
     private String name;
     private Integer code;
@@ -21,27 +24,28 @@ public class WeatherConditions {
     public WeatherConditions() {
     }
 
-    public WeatherConditions(Coordinates coordinates, Weather[] weather, String base, Main main, Wind wind, Clouds clouds, Rain rain, Long timeOfDataCalculation, System system, Integer id, String name, Integer code) {
-        this.coordinates = coordinates;
+    public WeatherConditions(Coordinates coord, Weather[] weather, String base, Main main, Wind wind, Clouds clouds, Rain rain, Snow snow, Long dt, System sys, Integer id, String name, Integer code) {
+        this.coord = coord;
         this.weather = weather;
         this.base = base;
         this.main = main;
         this.wind = wind;
         this.clouds = clouds;
         this.rain = rain;
-        this.timeOfDataCalculation = timeOfDataCalculation;
-        this.system = system;
+        this.snow = snow;
+        this.dt = dt;
+        this.sys = sys;
         this.id = id;
         this.name = name;
         this.code = code;
     }
 
-    public Coordinates getCoordinates() {
-        return coordinates;
+    public Coordinates getCoord() {
+        return coord;
     }
 
-    public void setCoordinates(Coordinates coordinates) {
-        this.coordinates = coordinates;
+    public void setCoord(Coordinates coord) {
+        this.coord = coord;
     }
 
     public Weather[] getWeather() {
@@ -92,20 +96,28 @@ public class WeatherConditions {
         this.rain = rain;
     }
 
-    public Long getTimeOfDataCalculation() {
-        return timeOfDataCalculation;
+    public Snow getSnow() {
+        return snow;
     }
 
-    public void setTimeOfDataCalculation(Long timeOfDataCalculation) {
-        this.timeOfDataCalculation = timeOfDataCalculation;
+    public void setSnow(Snow snow) {
+        this.snow = snow;
     }
 
-    public System getSystem() {
-        return system;
+    public Long getDt() {
+        return dt;
     }
 
-    public void setSystem(System system) {
-        this.system = system;
+    public void setDt(Long dt) {
+        this.dt = dt;
+    }
+
+    public System getSys() {
+        return sys;
+    }
+
+    public void setSys(System sys) {
+        this.sys = sys;
     }
 
     public Integer getId() {
@@ -135,15 +147,16 @@ public class WeatherConditions {
     @Override
     public String toString() {
         return "WeatherConditions{" +
-                "coordinates=" + coordinates +
-                ", weather=" + weather +
+                "coord=" + coord +
+                ", weather=" + Arrays.toString(weather) +
                 ", base='" + base + '\'' +
                 ", main=" + main +
                 ", wind=" + wind +
                 ", clouds=" + clouds +
                 ", rain=" + rain +
-                ", timeOfDataCalculation=" + timeOfDataCalculation +
-                ", system=" + system +
+                ", snow=" + snow +
+                ", dt=" + dt +
+                ", sys=" + sys +
                 ", id=" + id +
                 ", name='" + name + '\'' +
                 ", code=" + code +

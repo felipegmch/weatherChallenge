@@ -6,14 +6,14 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Wind {
 
     private Double speed;
-    private Double degrees;
+    private Double deg;
 
     public Wind() {
     }
 
-    public Wind(Double speed, Double degrees) {
+    public Wind(Double speed, Double deg) {
         this.speed = speed;
-        this.degrees = degrees;
+        this.deg = deg;
     }
 
     public Double getSpeed() {
@@ -24,19 +24,19 @@ public class Wind {
         this.speed = speed;
     }
 
-    public Double getDegrees() {
-        return degrees;
+    public Double getDeg() {
+        return deg;
     }
 
-    public void setDegrees(Double degrees) {
-        this.degrees = degrees;
+    public void setDeg(Double deg) {
+        this.deg = deg;
     }
 
     @Override
     public String toString() {
         return "Wind{" +
                 "speed=" + speed +
-                ", degrees=" + degrees +
+                ", deg=" + deg +
                 '}';
     }
 }

@@ -5,38 +5,38 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Coordinates {
 
-    private Long longitude;
-    private Long latitude;
+    private Double lon;
+    private Double lat;
 
     public Coordinates() {
     }
 
-    public Coordinates(Long longitude, Long latitude) {
-        this.longitude = longitude;
-        this.latitude = latitude;
+    public Coordinates(Double lon, Double lat) {
+        this.lon = lon;
+        this.lat = lat;
     }
 
-    public Long getLongitude() {
-        return longitude;
+    public Double getLon() {
+        return lon;
     }
 
-    public void setLongitude(Long longitude) {
-        this.longitude = longitude;
+    public void setLon(Double lon) {
+        this.lon = lon;
     }
 
-    public Long getLatitude() {
-        return latitude;
+    public Double getLat() {
+        return lat;
     }
 
-    public void setLatitude(Long latitude) {
-        this.latitude = latitude;
+    public void setLat(Double lat) {
+        this.lat = lat;
     }
 
     @Override
     public String toString() {
         return "Coordinates{" +
-                "longitude=" + longitude +
-                ", latitude=" + latitude +
+                "lon=" + lon +
+                ", lat=" + lat +
                 '}';
     }
 }

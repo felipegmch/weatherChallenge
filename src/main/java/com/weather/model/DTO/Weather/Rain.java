@@ -5,27 +5,27 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Rain {
 
-    private Double threeLastHours;
+    private Double rain3h;
 
     public Rain() {
     }
 
-    public Rain(Double threeLastHours) {
-        this.threeLastHours = threeLastHours;
+    public Rain(Double rain3h) {
+        this.rain3h = rain3h;
     }
 
-    public Double getThreeLastHours() {
-        return threeLastHours;
+    public Double getRain3h() {
+        return rain3h;
     }
 
-    public void setThreeLastHours(Double threeLastHours) {
-        this.threeLastHours = threeLastHours;
+    public void setRain3h(Double rain3h) {
+        this.rain3h = rain3h;
     }
 
     @Override
     public String toString() {
         return "Rain{" +
-                "threeLastHours=" + threeLastHours +
+                "rain3h=" + rain3h +
                 '}';
     }
 }
