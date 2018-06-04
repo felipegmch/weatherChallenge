@@ -1,4 +1,4 @@
-package weatherChallenge.unit;
+package com.weatherChallenge.unit;
 
 import com.weather.controller.CityController;
 import com.weather.model.DTO.Weather.*;
@@ -53,6 +53,46 @@ public class WeatherAPIControllerTest {
     @Test
     public void demo() {
         assertSame(weatherConditions.getName(), "Hamburg");
+    }
+
+    @Test
+    public void cityCount() {
+    }
+
+    @Test
+    public void allCities() {
+    }
+
+    @Test
+    public void top100Cities() {
+    }
+
+    @Test
+    public void cityByIdDefault() {
+    }
+
+    @Test
+    public void cityByIdMetric() {
+    }
+
+    @Test
+    public void cityByIdImperial() {
+    }
+
+    @Test
+    public void cityByNameDefault() {
+    }
+
+    @Test
+    public void cityByNameMetric() {
+    }
+
+    @Test
+    public void cityByNameImperial() {
+    }
+
+    @Test
+    public void cityByNameAndCountryCode() {
     }
 
 
