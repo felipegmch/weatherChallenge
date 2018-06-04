@@ -3,6 +3,7 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs';
 
 import { map, catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
 import { WeatherConditions } from '../weather/weather-conditions';
 import { City } from '../city';
 
@@ -55,11 +56,9 @@ export class CityService {
 
   // API: GET /cities/id
   public getWeatherbyCityId(id:number, units:string) {
-    console.log(this.baseUrl + '/cities/id' + '?' + 'id=' + id + (units != null ? "&units=" + units : ""));
     return this._http.get(this.baseUrl + '/cities/id' + '?' + 'id=' + id + (units != null ? "&units=" + units : "")).pipe(
       map(response => {
-        const weatherConditions = response.json();
-        return weatherConditions.map((weatherConditions) => new WeatherConditions(weatherConditions));
+        return response.json();
       }),
       catchError(this.errorHandler)
     );
@@ -77,7 +76,7 @@ export class CityService {
   }
 
   errorHandler(error:Response) {
-    return Observable.throw(error || "SERVER ERROR");
+    return throwError(error || "SERVER ERROR");
   }
 
 }

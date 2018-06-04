@@ -25,8 +25,6 @@ export class CitylistComponent implements OnInit {
   }
 
   getWeather(city, unit) {
-    console.log(city);
-    console.log(unit);
     this._cityService.getWeatherbyCityId(city, unit).subscribe((weatherConditions) => {
       this.weatherConditions = weatherConditions;
     }, (error) => {
