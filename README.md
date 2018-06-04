@@ -33,7 +33,7 @@ It took me around 20 hours to do this challenge. Considering that I have never m
 - /cities/name: GET, parameters {cityName: String, countryCode: String (optional), units: String (optional)}. Calls the openWeatherMap API and retrieves the weather conditions of by the name of the city (cityName) and the code of the country (countryCode - optional), which is present in the database. The units are optional (default: Kelvin, metric: Metric, fahrenheit: Fahrenheit).
 
 ### To start the frontend, in a terminal/prompt
--cd ./src/main/resources/static/weatherChallenge
--ng serve --open
--Frontend runs by default in http://localhost:4200/
+- cd ./src/main/resources/static/weatherChallenge
+- ng serve --open
+- Frontend runs by default in http://localhost:4200/
 
