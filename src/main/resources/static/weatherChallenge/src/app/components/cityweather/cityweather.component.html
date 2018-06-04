@@ -1,3 +1,4 @@
+
 <div class="panel panel-default">
     <div class="panel-heading">
         Result
@@ -15,27 +16,27 @@
                 <tbody>
                 <tr>
                     <td>City</td>
-                    <td>Medellin</td>
+                    <td>{{weatherConditions.name}}</td>
                 </tr>
                 <tr>
                     <td>Country</td>
-                    <td>CO</td>
+                    <td>{{weatherConditions.sys.country}}</td>
                 </tr>
                 <tr>
                     <td>Latitude</td>
-                    <td>6.25</td>
+                    <td>{{weatherConditions.coord.lat}}</td>
                 </tr>
                 <tr>
                     <td>Longitude</td>
-                    <td>89.3</td>
+                    <td>{{weatherConditions.coord.lon}}</td>
                 </tr>
                 <tr>
                     <td>Current weather</td>
-                    <td>20</td>
+                    <td>{{weatherConditions.main.temp}}</td>
                 </tr>
                 <tr>
                     <td>Wind Speed</td>
-                    <td>4.1</td>
+                    <td>{{weatherConditions.wind.speed}}</td>
                 </tr>
                 </tbody>
             </table>
