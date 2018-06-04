@@ -37,3 +37,8 @@ It took me around 20 hours to do this challenge. Considering that I have never m
 - ng serve --open
 - Frontend runs by default in http://localhost:4200/
 
+## Fun features for the future (FFFF)
+- Given a country, all the cities and a heat map/rain map/snow map/wind current map
+- Given a City, find the Antipodes city
+- Use more thoroughly the OpenWeatherMap API
+- Use a persistent database to store sessions, history and profiles
